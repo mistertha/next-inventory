@@ -1,6 +1,7 @@
-// app/todos/page.tsx
 // ISR - Revalidate ทุก 60 วินาที
 import React from "react"
+
+export const dynamic = "force-dynamic"
 
 type Todo = {
     id: number
