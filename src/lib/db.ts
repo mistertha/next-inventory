@@ -11,7 +11,7 @@ const pool = new Pool({
     max: 20,
     idleTimeoutMillis: 30000,
     connectionTimeoutMillis: 2000,
-    ssl: process.env.DB_SSL === "true" ? { rejectUnauthorized: false } : false,
+    ssl: process.env.DB_SSL === "true" || process.env.DB_SSLMODE === "require" ? { rejectUnauthorized: false } : false,
 })
 
 // ทดสอบ Connection
