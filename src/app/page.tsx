@@ -4,6 +4,9 @@ import { ThemeToggle } from "@/components/theme-toggle"
 import React from "react"
 import { Button } from "@/components/ui/button"
 // ฟังก์ชันดึงข้อมูล (ทำงานบน Server)
+
+
+export const dynamic = "force-dynamic"
 async function getUsers() {
   const res = await fetch("https://jsonplaceholder.typicode.com/users")
 
